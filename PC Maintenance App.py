@@ -5,14 +5,14 @@ import os
 # command line see the fileinput module. For creating temporary files and directories see 
 # the tempfile module, and for high-level file and directory handling see the shutil module.
 import shutil
+#The shutil module offers a number of high-level operations on files and collections of files. 
+# In particular, functions are provided which support file copying and removal. For operations on 
+# individual files, see also the os module.
+import psutil
 #Psutil is a Python cross-platform library used to access system details and process utilities. 
 # It is used to keep track of various resources utilization in the system. Usage of resources 
 # like CPU, memory, disks, network, sensors can be monitored. Hence, this library is used for 
 # system monitoring, profiling, limiting process resources, and the management of running processes.
-import psutil
-#The shutil module offers a number of high-level operations on files and collections of files. 
-# In particular, functions are provided which support file copying and removal. For operations on 
-# individual files, see also the os module.
 
 def temporary_files():
     temp= os.path.join(os.environ.get("TEMP"), "temp_folder_name")
